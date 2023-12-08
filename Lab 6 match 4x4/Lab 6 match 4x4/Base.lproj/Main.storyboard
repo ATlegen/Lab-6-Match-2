@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xbm-eh-O1C">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="1uh-8H-isF">
+            <objects>
+                <viewController id="xbm-eh-O1C" customClass="GameViewController" customModule="Lab_6_match_4x4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H93-id-se4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="e2c-eG-2Fm">
+                                <rect key="frame" x="4" y="233.66666666666663" width="385" height="385"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Qfh-HH-cs1">
+                                        <rect key="frame" x="0.0" y="0.0" width="385" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTI-fe-tHf">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="94" id="tHB-NA-VHE"/>
+                                                    <constraint firstAttribute="width" constant="94" id="wzs-7e-me8"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="nWm-Sf-BS6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jc-7q-Ir8">
+                                                <rect key="frame" x="97" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="94" id="63Z-I2-qbv"/>
+                                                    <constraint firstAttribute="height" constant="94" id="IQc-fx-1ZK"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="PwF-2Y-c8Q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4me-ZM-EvP">
+                                                <rect key="frame" x="194" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="94" id="1UJ-bL-xXI"/>
+                                                    <constraint firstAttribute="width" constant="94" id="GGL-nu-VWC"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="QjW-Hc-h4f"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0E-ep-kd0">
+                                                <rect key="frame" x="291" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="94" id="CZC-wH-oz2"/>
+                                                    <constraint firstAttribute="width" constant="94" id="clm-3M-U9g"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="7vy-8D-MW0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="SUF-Mp-fAE">
+                                        <rect key="frame" x="0.0" y="97.000000000000028" width="385" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgt-eG-g5r">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="94" id="PbB-yK-3AS"/>
+                                                    <constraint firstAttribute="width" constant="94" id="Y8n-96-Ad4"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="7nJ-CK-FuR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sav-oR-06h">
+                                                <rect key="frame" x="97" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="94" id="II0-6k-1Ei"/>
+                                                    <constraint firstAttribute="height" constant="94" id="gMc-bz-00W"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="qzc-uG-enb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yld-SQ-4fF">
+                                                <rect key="frame" x="194" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="94" id="ECr-lg-ptn"/>
+                                                    <constraint firstAttribute="height" constant="94" id="ujk-hw-N8H"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="6fO-Oz-ENS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiV-lL-Iku">
+                                                <rect key="frame" x="291" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="94" id="5Rx-7m-Nlg"/>
+                                                    <constraint firstAttribute="width" constant="94" id="pH9-se-9LC"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="szg-y8-FXk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="xNm-nJ-Ivc">
+                                        <rect key="frame" x="0.0" y="194.00000000000003" width="385" height="93.999999999999972"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTE-yi-tf9">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="94" id="eJo-HL-1Gq"/>
+                                                    <constraint firstAttribute="width" constant="94" id="txp-SG-i5F"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="7of-zC-O7X"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFF-Yq-eU5">
+                                                <rect key="frame" x="97" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="94" id="SuE-6h-tvF"/>
+                                                    <constraint firstAttribute="width" constant="94" id="eko-2x-AZO"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="qGY-Xj-Q7g"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXr-CL-Bqf">
+                                                <rect key="frame" x="194" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="94" id="16Q-C6-YZf"/>
+                                                    <constraint firstAttribute="width" constant="94" id="UkZ-k7-DQJ"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="kS8-Eb-xzO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JH6-XH-0PP">
+                                                <rect key="frame" x="291" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="94" id="QOb-nn-iN5"/>
+                                                    <constraint firstAttribute="height" constant="94" id="cd2-6d-9sh"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="LtV-8F-ZnM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="B16-nU-ym7">
+                                        <rect key="frame" x="0.0" y="291" width="385" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cn6-Jv-Iez">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="94" id="QFw-iL-KoW"/>
+                                                    <constraint firstAttribute="height" constant="94" id="VxL-f4-bXs"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="tjY-57-uwQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC2-KC-k2N">
+                                                <rect key="frame" x="97" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="94" id="DYF-tx-4FC"/>
+                                                    <constraint firstAttribute="height" constant="94" id="sAn-gd-xZu"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="puy-zf-R2l"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbf-j6-vZO">
+                                                <rect key="frame" x="194" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="94" id="Pzs-oL-as2"/>
+                                                    <constraint firstAttribute="height" constant="94" id="Vjf-5u-gce"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="pJc-cb-3GB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBi-19-bnQ">
+                                                <rect key="frame" x="291" y="0.0" width="94" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="94" id="dRF-CK-HV7"/>
+                                                    <constraint firstAttribute="height" constant="94" id="qem-iz-Oa2"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="image"/>
+                                                <connections>
+                                                    <action selector="game:" destination="xbm-eh-O1C" eventType="touchUpInside" id="qlU-H7-a5u"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5jK-hT-WjS"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e2c-eG-2Fm" firstAttribute="centerX" secondItem="H93-id-se4" secondAttribute="centerX" id="He5-eh-Q4k"/>
+                            <constraint firstItem="e2c-eG-2Fm" firstAttribute="centerY" secondItem="H93-id-se4" secondAttribute="centerY" id="icW-NA-SnO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="YTI-fe-tHf" id="DIk-pX-NZQ"/>
+                        <outlet property="button10" destination="RFF-Yq-eU5" id="gmK-E8-Fce"/>
+                        <outlet property="button11" destination="uXr-CL-Bqf" id="hpQ-K0-c4z"/>
+                        <outlet property="button12" destination="JH6-XH-0PP" id="OF3-fW-zu1"/>
+                        <outlet property="button13" destination="Cn6-Jv-Iez" id="hMQ-CX-Dx3"/>
+                        <outlet property="button14" destination="lC2-KC-k2N" id="6aM-lD-NRc"/>
+                        <outlet property="button15" destination="Mbf-j6-vZO" id="JXt-25-ju4"/>
+                        <outlet property="button16" destination="WBi-19-bnQ" id="ZEm-kH-9Kd"/>
+                        <outlet property="button2" destination="1jc-7q-Ir8" id="nTy-Mx-unw"/>
+                        <outlet property="button3" destination="4me-ZM-EvP" id="SOk-gM-kQ5"/>
+                        <outlet property="button4" destination="g0E-ep-kd0" id="pVx-pB-oEu"/>
+                        <outlet property="button5" destination="hgt-eG-g5r" id="Lpg-MX-jU0"/>
+                        <outlet property="button6" destination="sav-oR-06h" id="RnG-fN-A9m"/>
+                        <outlet property="button7" destination="Yld-SQ-4fF" id="sKB-gU-4M9"/>
+                        <outlet property="button8" destination="UiV-lL-Iku" id="L6q-j3-ArE"/>
+                        <outlet property="button9" destination="uTE-yi-tf9" id="1Wp-hr-sRI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pl4-ZF-Q7K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220.61068702290075" y="86.619718309859152"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="251" height="201"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
